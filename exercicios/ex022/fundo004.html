@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundo</title>
+    <title>Fundo fixo de tela</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
         body{
@@ -13,15 +13,23 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover; /*a imagem vai cobrir a tela inteira, se preciso a imagem será cortada*/
+            background-attachment: fixed; /*vínculo scroll padrão, a imagem vai rolar junto com conteúdo; fixed a imagem vai ficar fixa na rolagem*/
+            /*shorthand 
+            background: 
+            color, image, position, repeat, attachment (só não funciona o size)
+            background: black url("imagens/wallpaper002.jpg") center center no-repeat fixed */
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px; /*máxima largura que o main vai ocupar na tela*/
             padding: 10px;
             margin: auto;
             text-align: justify;
             border: 1px solid darkblue;
             border-radius: 15px;
+        }
+        main > p{
+            text-indent: 20px; /*identação no início de cada parágfafo*/ 
         }
     </style>
 </head>
