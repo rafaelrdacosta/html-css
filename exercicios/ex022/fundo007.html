@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        #container{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative; /*O posicionamento relativo já é padrão*/
+            background-color: purple;
+            height: 96vh;
+            padding: 10px;
+        }
+        #conteudo{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute; /*Agora pode usar as funções left top abaixo*/
+            left: 50%; 
+            top: 50%;
+            transform: translate(-50%, -50%); /*A partir do posicionamento absolute com left e top, a função tranformação reposiciona a imagem com base no plano cartesiano*/
+            background-color: yellow;
+            height: 200px;
+            width: 400px;    
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
