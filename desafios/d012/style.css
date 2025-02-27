@@ -23,7 +23,8 @@ header{
 
 header > h1{
     padding-top: 50px;
-    font-variant: small-caps; /*Todas as letras maiúsculas mas a 1ª ficam maiores*/
+    font-variant: small-caps; /*Todas as letras maiúsculas mas as 1ª ficam maiores*/
+    /* existe o text-transform: uppercase; -> para tudo maiúsculo*/
 }
 header > p{
     padding-bottom: 50px;
@@ -42,7 +43,7 @@ header a:hover, footer a:hover {
 section{
     padding-top: 10vh; /*ajudar no efeito parallax*/
     padding-bottom: 10vh; /*ajudar no efeito parallax*/
-    line-height: 2em; /*espaçamento duplo entre as frase*/
+    line-height: 2em; /*espaçamento duplo entre as frases*/
     padding-left: 30px;
 }
 
