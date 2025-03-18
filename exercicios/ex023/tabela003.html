@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th{
             border: 1px solid black;
@@ -24,8 +25,14 @@
             background-color: lightgray;
         }
         thead, tfoot{
-           background-color: gray;
+           background-color: #383838;
            color: white; 
+        }
+
+        thead > tr > th{            /*Configurações para primeira linha da tabela ficar fixa junto com position relative da tabela */
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
         }
         
         tbody > tr:nth-child(2n){  /*tr:nth-child(2n) de 2 em 2 linhas vai ser aplicado o efeito zebrado
