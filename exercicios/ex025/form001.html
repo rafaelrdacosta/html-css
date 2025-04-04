@@ -13,7 +13,7 @@
 </head>
 <body>
    <h1>Meu primeiro formulário</h1> 
-   <form action="cadastro.php" autocomplete="off">  
+   <form action="cadastro.php" method="post" autocomplete="off">  <!--method padrão é o get - não pode ultrapassar 3000 bytes, mais ou menos 3000 caracteres-->
         <p><label for="inome">Nome:</label> <!--for coloca o id do input-->
             <input type="text" name="nome" id="inome"></p> <!--name útil para o HTML/PHP e ID para o Javascript-->
         <p><label for="isobrenome">Sobrenome:</label> 
